@@ -209,6 +209,7 @@ section {
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
+  animation:slideTop 1s ease forwards;
 }
 
 /* ICONS */
@@ -226,6 +227,12 @@ section {
   gap: 1rem;
 }
 
+.btn-container-projects {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .btn {
   font-weight: 600;
   transition: all 300ms ease;
@@ -234,9 +241,14 @@ section {
   border-radius: 2rem;
 }
 
-.btn-color-1,
+.btn-color-1
+{
+  border: rgb(53, 53, 53) 0.1rem solid;
+  animation:slideLeft 1s ease forwards;
+}
 .btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
+  animation:slideRight 1s ease forwards;
 }
 
 .btn-color-1:hover,
@@ -317,6 +329,7 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  /* animation: slideTop  1s ease forwards ; */
 }
 
 /* EXPERIENCE SECTION */
@@ -370,7 +383,7 @@ article .icon {
 }
 
 .project-img {
-/*   border-radius: 2rem; */
+  /* border-radius: 2rem; */
   width: 60%;
   height: 60%;
 }
@@ -434,4 +447,61 @@ footer {
 
 footer p {
   text-align: center;
+}
+@keyframes slideLeft
+{
+    0%{
+        transform: translateX(100px);
+        opacity:0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity:1;
+    }
+}
+@keyframes slideRight
+{
+    0%{
+        transform: translateX(-100px);
+        opacity:0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity:1;
+    }
+}
+@keyframes slideTop
+{
+    0%{
+        transform: translateY(100px);
+        opacity:0;
+    }
+    100%
+    {
+        transform: translateY(0px);
+        opacity:1;
+    }
+}
+@keyframes slideBottom
+{
+    0%{
+        transform: translateY(-100px);
+        opacity:0;
+    }
+    100%
+    {
+        transform: translateY(0px);
+        opacity:1;
+    }
+    
+}
+@keyframes animateUser
+{
+  50%
+  {
+    right:30px;
+    top:-90px;
+  }
 }
