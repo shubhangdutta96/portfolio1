@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio_Shubhang_Dutta</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="Shubhang's site.css" />
     <link rel="stylesheet" href="mediaQueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">.folio</div>
+      <div class="logo" title="Portfolio by Shubhang Dutta..">.folio</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about" title="About">About</a></li>
@@ -62,7 +63,7 @@
             src="assets/linkedin_1384014.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/shubhang-dutta-55570a251'"
+            onclick="location.href='https://www.linkedin.com/in/shubhang-dutta-a62269290'"
           />
           <img
           title="Github"
@@ -88,7 +89,7 @@
         </div>
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container">
+            <div class="details-container" data-aos="fade-right">
               <img
                 src="assets/certificate_3885345.png"
                 alt="Experience icon"
@@ -97,7 +98,7 @@
               <h2>Experience</h2>
               <p>Fresher <br />Software Development</p>
             </div>
-            <div class="details-container">
+            <div class="details-container" data-aos="fade-left">
               <img
                 src="assets/education_3197910.png"
                 alt="Education icon"
@@ -128,7 +129,7 @@
         <div class="about-containers">
           <div class="details-container">
             <h2 class="experience-sub-title">SoftWare Development</h2>
-            <div class="article-container">
+            <div class="article-container" data-aos="fade-right">
               <article>
                 <img
                   src="assets/check.png"
@@ -197,7 +198,7 @@
               </article>
             </div>
           </div>
-          <div class="details-container">
+          <div class="details-container" data-aos="fade-left">
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
               <article>
@@ -260,7 +261,7 @@
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
+          <div class="details-container color-container" data-aos="slide-up">
             <div class="article-container">
               <img
                 src="assets/to_do_listProject1.png"
@@ -284,8 +285,8 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
+          <div class="details-container color-container" data-aos="slide-up">
+            <div class="article-container" >
               <img
                 src="assets/portfolioProject2.jpg"
                 alt="Project 2"
@@ -296,7 +297,7 @@
             <div class="btn-container-projects">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/shubhangdutta96/Portfolio-Website'"
+                onclick="location.href='https://github.com/'"
               >
                 Github
               </button>
@@ -378,5 +379,11 @@
     </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="Shubhang's site.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:1000,
+      });
+    </script>
   </body>
 </html>
